@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: hsl(6, 93%, 5%);
+}
+
+body {
+  padding-top: 3rem;
+  background: hsl(250, 36%, 17%);
+}
+
+input {
+  line-height: 1.4em;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  border-radius: 5px;
+  background: salmon;
+  margin-bottom: 1.5rem;
+  margin-top: -0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(7, 4%, 40%);
+}
+
+.lrg-btn {
+  padding: 10px 16px;
+  background: hsl(6, 93%, 71%);
+  border-radius: 5px;
+  color: hsl(6, 93%, 96%);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: background 200ms, color 200ms;
+}
+
+.lrg-btn:hover {
+  background: hsl(6, 93%, 61%);
+  color: hsl(6, 93%, 99%);
+}
+
+.wrapper {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 732px) {
+  .wrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.input-component {
+  background: hsl(6, 93%, 99%);
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 3rem;
+}
+
+.add-list-label {
+  display: block;
+  color: hsl(6, 93%, 5%);
+  margin-bottom: 0.75rem;
+}
+
+.add-list-input {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid hsl(6, 93%, 96%);
+}
+
+.add-list-input:focus {
+  outline: none;
+}
+
+#list {
+  padding-left: 0;
+}
+
+.list-item {
+  background: #fff;
+  padding: 10px;
+  border: 2px solid hsl(6, 93%, 96%);
+  border-radius: 5px;
+  list-style: none;
+  margin-bottom: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-item[data-edit='true'] {
+  border-color: darksalmon;
+}
+
+.list-item-content {
+  padding: 0.4rem;
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.a-btn {
+  color: rgb(204, 190, 188);
+  transition: color 200ms;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  color: darksalmon;
+}
+
+.remove-btn {
+  margin-left: 1rem;
+}
+
+.remove-btn:hover {
+  color: rgb(236, 41, 19);
+}
+
+.edit-field {
+  border: none;
+  padding: 0.4rem;
+}
